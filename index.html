@@ -3,124 +3,320 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Menu</title>
+    <title>Delicious Bites - Restaurant & Fine Dining</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>🍽️ Delicious Bites</h1>
-        <p>Fresh food, great taste</p>
-    </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>🍴 Delicious Bites</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-    <main>
-        <!-- Appetizers -->
-        <section class="menu-section">
-            <h2>Appetizers</h2>
-            <div class="menu-items">
-                <div class="menu-item">
-                    <div class="item-header">
-                        <span class="item-name">Garlic Bread</span>
-                        <span class="item-price">$5.99</span>
-                    </div>
-                    <p class="item-desc">Crispy bread with garlic butter and herbs</p>
-                </div>
-                <div class="menu-item">
-                    <div class="item-header">
-                        <span class="item-name">Caesar Salad</span>
-                        <span class="item-price">$8.99</span>
-                    </div>
-                    <p class="item-desc">Fresh romaine with croutons and parmesan</p>
-                </div>
-                <div class="menu-item">
-                    <div class="item-header">
-                        <span class="item-name">Mozzarella Sticks</span>
-                        <span class="item-price">$7.99</span>
-                    </div>
-                    <p class="item-desc">Golden fried with marinara sauce</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Experience <span class="gradient-text">Culinary Excellence</span></h1>
+                <p class="hero-subtitle">Where passion meets flavor in every bite</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">View Menu</a>
+                    <a href="#contact" class="btn btn-secondary">Book Table</a>
                 </div>
             </div>
-        </section>
-
-        <!-- Main Courses -->
-        <section class="menu-section">
-            <h2>Main Courses</h2>
-            <div class="menu-items">
-                <div class="menu-item">
-                    <div class="item-header">
-                        <span class="item-name">Grilled Chicken</span>
-                        <span class="item-price">$14.99</span>
-                    </div>
-                    <p class="item-desc">Marinated chicken with roasted vegetables</p>
-                </div>
-                <div class="menu-item">
-                    <div class="item-header">
-                        <span class="item-name">Beef Burger</span>
-                        <span class="item-price">$12.99</span>
-                    </div>
-                    <p class="item-desc">Juicy patty with cheese and fresh toppings</p>
-                </div>
-                <div class="menu-item">
-                    <div class="item-header">
-                        <span class="item-name">Pasta Alfredo</span>
-                        <span class="item-price">$13.99</span>
-                    </div>
-                    <p class="item-desc">Creamy fettuccine with parmesan sauce</p>
+            <div class="hero-image">
+                <div class="floating-image">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800" alt="Restaurant">
                 </div>
             </div>
-        </section>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-        <!-- Desserts -->
-        <section class="menu-section">
-            <h2>Desserts</h2>
-            <div class="menu-items">
-                <div class="menu-item">
-                    <div class="item-header">
-                        <span class="item-name">Chocolate Cake</span>
-                        <span class="item-price">$6.99</span>
+    <!-- Featured Dishes -->
+    <section class="featured-dishes" id="menu">
+        <div class="container">
+            <h2 class="section-title">Featured Dishes</h2>
+            <p class="section-subtitle">Chef's recommendations</p>
+            
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <div class="dish-image">
+                        <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba861?w=400" alt="Grilled Salmon">
+                        <div class="dish-price">$24.99</div>
                     </div>
-                    <p class="item-desc">Rich and moist with ganache topping</p>
+                    <div class="dish-content">
+                        <h3>Grilled Salmon</h3>
+                        <p>Fresh Atlantic salmon with herb butter and seasonal vegetables</p>
+                        <div class="ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
                 </div>
-                <div class="menu-item">
-                    <div class="item-header">
-                        <span class="item-name">Ice Cream</span>
-                        <span class="item-price">$4.99</span>
+
+                <div class="dish-card">
+                    <div class="dish-image">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400" alt="Beef Tenderloin">
+                        <div class="dish-price">$32.99</div>
                     </div>
-                    <p class="item-desc">Three scoops - vanilla, chocolate, strawberry</p>
+                    <div class="dish-content">
+                        <h3>Beef Tenderloin</h3>
+                        <p>Prime cut beef with red wine reduction and garlic mashed potatoes</p>
+                        <div class="ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-image">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400" alt="Truffle Pasta">
+                        <div class="dish-price">$18.99</div>
+                    </div>
+                    <div class="dish-content">
+                        <h3>Truffle Pasta</h3>
+                        <p>Homemade pasta with black truffle cream sauce and parmesan</p>
+                        <div class="ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Drinks -->
-        <section class="menu-section">
-            <h2>Drinks</h2>
-            <div class="menu-items">
-                <div class="menu-item">
-                    <div class="item-header">
-                        <span class="item-name">Fresh Lemonade</span>
-                        <span class="item-price">$3.99</span>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Us</h2>
+                    <p class="section-subtitle">A story of passion and excellence</p>
+                    <p class="about-description">
+                        Welcome to Delicious Bites, where culinary artistry meets warm hospitality. 
+                        Our restaurant has been serving the community for over a decade, 
+                        creating memorable dining experiences that keep our guests coming back.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>15+</h3>
+                            <p>Years of Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Expert Chefs</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1000+</h3>
+                            <p>Happy Customers</p>
+                        </div>
                     </div>
-                    <p class="item-desc">Squeezed daily, served ice cold</p>
+                    <a href="#contact" class="btn btn-primary">Visit Us</a>
                 </div>
-                <div class="menu-item">
-                    <div class="item-header">
-                        <span class="item-name">Iced Coffee</span>
-                        <span class="item-price">$4.49</span>
-                    </div>
-                    <p class="item-desc">Cold brew with your choice of milk</p>
-                </div>
-                <div class="menu-item">
-                    <div class="item-header">
-                        <span class="item-name">Soda</span>
-                        <span class="item-price">$2.99</span>
-                    </div>
-                    <p class="item-desc">Coke, Sprite, or Fanta</p>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600" alt="Restaurant Interior">
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 Delicious Bites. All rights reserved.</p>
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <p class="section-subtitle">Moments from our restaurant</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400" alt="Dish">
+                    <div class="gallery-overlay">
+                        <h3>Signature Dish</h3>
+                        <p>Chef's special creation</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400" alt="Steak">
+                    <div class="gallery-overlay">
+                        <h3>Perfect Steak</h3>
+                        <p>Cooked to perfection</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400" alt="Wine">
+                    <div class="gallery-overlay">
+                        <h3>Wine Collection</h3>
+                        <p>Finest selection</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400" alt="Dessert">
+                    <div class="gallery-overlay">
+                        <h3>Decadent Desserts</h3>
+                        <p>Sweet endings</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400" alt="Interior">
+                    <div class="gallery-overlay">
+                        <h3>Cozy Atmosphere</h3>
+                        <p>Warm and inviting</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400" alt="Cocktail">
+                    <div class="gallery-overlay">
+                        <h3>Crafted Cocktails</h3>
+                        <p>Mixology art</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">We'd love to hear from you</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Address</h3>
+                            <p>123 Restaurant Street<br>Food City, FC 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567<br>Open daily 11AM-10PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>info@deliciousbites.com<br>reservations@deliciousbites.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Delicious Bites</h3>
+                    <p>Where every meal is a masterpiece</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Opening Hours</h4>
+                    <ul>
+                        <li>Monday - Friday: 11:00 AM - 10:00 PM</li>
+                        <li>Saturday: 10:00 AM - 11:00 PM</li>
+                        <li>Sunday: 10:00 AM - 9:00 PM</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for updates and special offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Delicious Bites. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
